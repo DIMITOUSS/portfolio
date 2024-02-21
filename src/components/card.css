@@ -1,0 +1,11 @@
+.card{
+    display: flex;
+    height: 10rem;
+flex-direction: column;
+
+
+}
+.card img{
+object-fit: cover;
+background-size: cover;
+}
