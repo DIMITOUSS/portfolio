@@ -12,7 +12,14 @@ const Main = () => {
     color: 'blue',
     boxShadow: "0px 10px 20px -5px rgba(39,49,78,.1)",
     borderRadius: "10px",
+    display:"flex",
+    flexDirection:"column",
+    justifyContent: "center",
+    alignItems: "center",
+
   });
+
+  
   const typingAnimation = {
     '40%, 60%': {
       left: 'calc(100% + 30px)',
@@ -22,6 +29,7 @@ const Main = () => {
     },
   };
 
+  
   const Banner = styled(Card)({
     display: "flex",
     justifyContent: "center",
@@ -56,6 +64,7 @@ const Main = () => {
     centerPadding: "60px",
     cssEase: 'linear',
     rtl: true,
+    
   };
 
   // State to control the animation of typing effect
