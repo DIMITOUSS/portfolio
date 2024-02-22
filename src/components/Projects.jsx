@@ -26,26 +26,17 @@ const projects = [
 ];
 
 const bounceAnimation = keyframes`
-0%, 7% {
-  transform: rotateZ(0);
+0% {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
 }
-15% {
-  transform: rotateZ(-15deg);
+50% {
+  box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+  transform: translatey(-20px);
 }
-20% {
-  transform: rotateZ(10deg);
-}
-25% {
-  transform: rotateZ(-10deg);
-}
-30% {
-  transform: rotateZ(6deg);
-}
-35% {
-  transform: rotateZ(-4deg);
-}
-40%, 100% {
-  transform: rotateZ(0);
+100% {
+  box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+  transform: translatey(0px);
 }
 
 `;
