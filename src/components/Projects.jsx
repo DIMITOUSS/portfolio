@@ -35,10 +35,7 @@ const projects = [
     imageUrl: '/assets/nina.png',
   },
 ];
-const StyledTitle = styled(Typography)(
-  
 
-)
 const bounceAnimation = keyframes`
 0% {
   box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
