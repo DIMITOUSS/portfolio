@@ -8,6 +8,7 @@ const projects = [
     description: 'A cool project built with React and Sass.',
     imageUrl: '/assets/kasa.png',
   },
+  
   {
     title: 'Oh MyFood',
     description: 'A website for managing the restaurants built with Sass and HTML containing many animations.',
@@ -22,6 +23,16 @@ const projects = [
     title: 'City Riding',
     description: 'My first project ever on my learning path. It was like my first steps to web development.',
     imageUrl: '/assets/cityriding.png',
+  },
+  {
+    title: 'Kasa',
+    description: 'A cool project built with React and Sass.',
+    imageUrl: '/assets/kasa.png',
+  },
+  {
+    title: 'Kasa',
+    description: 'A cool project built with React and Sass.',
+    imageUrl: '/assets/nina.png',
   },
 ];
 
