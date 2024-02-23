@@ -5,14 +5,18 @@ const Blogs=({})=>{
 
     const StyledTitle=styled(Typography)({
 
-        color:'red',
-        fontFamily:'Shrikhand'
+        color:'#273746',
+        fontFamily:'Shrikhand',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center'
+        
     })
 
 return(
 <>
 <StyledTitle>
-<h1>Coming soon</h1>
+<h1>Coming soon...</h1>
 </StyledTitle>
 
 
