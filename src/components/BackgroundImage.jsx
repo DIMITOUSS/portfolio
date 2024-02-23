@@ -10,6 +10,7 @@ const BackgroundImage = ({ imageUrl, children }) => {
     backgroundRepeat: 'no-repeat',
     minHeight: '100vh',
     backgroundStyle:"initial",
+    backgroundBlendMode: 'hard-light',
   };
 
   return <div style={backgroundStyle}>{children}</div>;

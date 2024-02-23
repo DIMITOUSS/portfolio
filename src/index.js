@@ -9,6 +9,7 @@ import BackgroundImage from './components/BackgroundImage';
 import { CssBaseline } from '@mui/material';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Blogs from './components/Blogs'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -21,6 +22,8 @@ ReactDOM.render(
         <Routes>
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/blogs" element={<Blogs />} />
+
 
           <Route path="/" element={<Main/> } />
           <Route path="/" element={<Main/> } />

@@ -34,11 +34,12 @@ const Main = () => {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontFamily:'-moz-initial',
     backgroundImage: `url("./assets/5unsplash.jpg")`,
     height:"30vh",
     marginTop:'20rem',
     animation: `${typingAnimation} 3s infinite`,
+    backgroundSize:'inherit'
+
   });
 
   const cardsData = [

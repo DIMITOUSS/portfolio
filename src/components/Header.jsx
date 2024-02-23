@@ -22,6 +22,8 @@ const Header = () => {
         <StyledButton>
         <Button component={NavLink} to="/projects" color="inherit">Projects</Button>
         <Button component={NavLink} to="/contact" color="inherit">Contact</Button>
+        <Button component={NavLink} to="/blogs" color="inherit">Blogs</Button>
+
         </StyledButton>
       </Toolbar>
     </CustomAppBar >
