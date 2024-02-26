@@ -10,6 +10,8 @@ const Header = () => {
         color:'#17202A'
       });
       const StyledButton = styled(Button)({
+        display:'flex',
+        gap:'1rem',
           marginLeft:'10px',
           color: "#273746",});
   return (

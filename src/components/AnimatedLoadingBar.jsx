@@ -14,7 +14,7 @@ const AnimatedLoadingBar = ({ percentage }) => {
         style={{
           height: '100%',
           width,
-          backgroundColor: 'blue',
+          backgroundColor: '#AEB6BF',
         }}
       />
     </div>

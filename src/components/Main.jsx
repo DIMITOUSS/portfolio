@@ -4,7 +4,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { styled } from '@mui/system';
-import AnimatedLoadingBar from './AnimatedLoadingBar'; // Import AnimatedLoadingBar component
+import AnimatedLoadingBar from './AnimatedLoadingBar'; 
+import Mai from './Mai'
 
 const Main = () => {
   const CustomCard = styled(Card)({
@@ -29,6 +30,15 @@ const Main = () => {
     },
   };
 
+  const TextStyle = styled(Typography)({
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: 'rebeccapurple',
+    fontFamily:'Roboto',
+    fontSize:'large'
+ 
+  });
   
   const Banner = styled(Card)({
     display: "flex",
@@ -36,7 +46,6 @@ const Main = () => {
     alignItems: "center",
     backgroundImage: `url("./assets/5unsplash.jpg")`,
     height:"30vh",
-    marginTop:'20rem',
     animation: `${typingAnimation} 3s infinite`,
     backgroundSize:'inherit'
 
@@ -56,22 +65,22 @@ const Main = () => {
     focusOnSelect: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     centerMode: true,
     className: "center",
     centerPadding: "60px",
     cssEase: 'linear',
-    rtl: true,
+    
     
   };
 
   // State to control the animation of typing effect
   const [typedText, setTypedText] = useState('');
   const fullText = "Hello, I'm Oussama, a passionate and skilled Front-End Developer based in France. I specialize in building responsive websites using modern technologies like ReactJS, Redux, Node. Feel free to explore my projects or contact me if you need any help! Welcome to my portfolio where I showcase my projects, skills, and experiences.";
-  const typingSpeed = 50; // Adjust typing speed here
+  const typingSpeed = 50; 
 
   // Function to simulate typing effect
   const typeText = () => {
@@ -92,7 +101,7 @@ const Main = () => {
       <Slider {...sliderSettings}>
         {cardsData.map((card, index) => (
           <div key={index}>
-            <Card>
+            <Card style={{ display:'flex',flexDirection:'column ',gap:'2rem', objectFit: 'cover' }}>
               <CustomCard>
                 <CardMedia>
                   <img src={card.imageUrl} alt={card.title} style={{ height: 100, objectFit: 'cover' }} />
@@ -108,14 +117,15 @@ const Main = () => {
           </div>
         ))}
       </Slider>
-      <Typography variant="h4" gutterBottom>
-        Welcome to My Portfolio
-      </Typography>
       <Banner>
-        <Typography variant="body1">
+        <TextStyle variant="body1">
           {typedText}
-        </Typography>
+        </TextStyle>
       </Banner>
+    
+      <Mai/>
+     
+
     </div>
   );
 };
