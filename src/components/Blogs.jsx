@@ -1,29 +1,21 @@
-import { Typography } from "@mui/material";
+// Blogs.js
 import React from "react";
-import styled from "styled-components";
-import './style.css'
-const Blogs=({})=>{
+import { Player } from '@lottiefiles/react-lottie-player';
+import AnimationData from "../lottie/Animation.json";
+import "./style.css";
 
-    const StyledTitle=styled(Typography)({
+const Blogs = () => {
+  return (
+    <Player
+    autoplay
+    loop
+    src={AnimationData}
+    style={{ height: '500px', width: '500px' }}
+  >
+  </Player>
 
-        color:'#273746',
-        fontFamily:'Shrikhand',
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center'
-        
-    })
+    
+  );
+};
 
-return(
-<div className="coming-soon-container">
-      <h1 className="coming-soon-text">Coming Soon!</h1>
-      <div className="animation-container">
-        <div className="dot"></div>
-        <div className="dot"></div>
-        <div className="dot"></div>
-      </div>
-    </div>
-);
-
-}
-export  default Blogs
+export default Blogs;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
 import styled, { keyframes } from 'styled-components';
-
+import './main.css'
 const projects = [
   {
     title: 'Kasa',

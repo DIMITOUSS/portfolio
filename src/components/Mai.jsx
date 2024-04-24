@@ -37,15 +37,9 @@ const Main = () => {
     fade: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 2,
     autoplaySpeed: 1500,
-
-    waitForAnimate: true,
 autoplay:true,
-className: "center",
-centerPadding: "60px",
-cssEase: 'linear',    
+   
 
     
   };

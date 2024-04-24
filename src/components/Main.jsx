@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { Card, CardContent, Typography, CardMedia } from '@mui/material';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -6,6 +5,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import { styled } from '@mui/system';
 import AnimatedLoadingBar from './AnimatedLoadingBar'; 
 import Mai from './Mai'
+import './main.css'
+import { Player } from '@lottiefiles/react-lottie-player';
+import AnimationData from '../lottie/Animation3.json'
 
 const Main = () => {
   const CustomCard = styled(Card)({
@@ -30,16 +32,7 @@ const Main = () => {
     },
   };
 
-  const TextStyle = styled(Typography)({
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    color: 'rebeccapurple',
-    fontFamily:'Roboto',
-    fontSize:'large'
- 
-  });
-  
+
   const Banner = styled(Card)({
     display: "flex",
     justifyContent: "center",
@@ -65,7 +58,7 @@ const Main = () => {
     focusOnSelect: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -77,25 +70,7 @@ const Main = () => {
     
   };
 
-  // State to control the animation of typing effect
-  const [typedText, setTypedText] = useState('');
-  const fullText = "Hello, I'm Oussama, a passionate and skilled Front-End Developer based in France. I specialize in building responsive websites using modern technologies like ReactJS, Redux, Node. Feel free to explore my projects or contact me if you need any help! Welcome to my portfolio where I showcase my projects, skills, and experiences.";
-  const typingSpeed = 50; 
-
-  // Function to simulate typing effect
-  const typeText = () => {
-    let i = 0;
-    const intervalId = setInterval(() => {
-      setTypedText(prevText => prevText + fullText[i]);
-      i++;
-      if (i === fullText.length) clearInterval(intervalId);
-    }, typingSpeed);
-  };
-
-  useEffect(() => {
-    typeText();
-  }, []); // Run the typing effect on component mount
-
+  
   return (
     <div>
       <Slider {...sliderSettings}>
@@ -118,9 +93,13 @@ const Main = () => {
         ))}
       </Slider>
       <Banner>
-        <TextStyle variant="body1">
-          {typedText}
-        </TextStyle>
+      <Player
+    autoplay
+    loop
+    src={AnimationData}
+    style={{ height: '300px', width: '300px' }}
+  >
+  </Player>
       </Banner>
     
       <Mai/>
