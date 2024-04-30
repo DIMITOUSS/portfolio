@@ -93,7 +93,7 @@ const Contact = () => {
       </SubmitButton>
       <SocialIconsContainer>
       
-        <SocialIcon target="_blank" url="" />
+        <SocialIcon target="_blank" url="https://www.linkedin.com/in/oussama-kechairi-871445109/" />
 
         <SocialIcon target="_blank" url="https://github.com/DIMITOUSS" />
       </SocialIconsContainer>

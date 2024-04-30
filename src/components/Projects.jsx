@@ -41,6 +41,11 @@ const StyledList = styled.ul`
 
 const StyledListItem = styled.li`
   margin-bottom: 0.5rem;
+  background-color:rgb(171 205 255);
+  border-radius: 10px;
+  padding: 10px;
+  font-family:'Shrikhand';
+  
 `;
 
 const Projects = () => {
@@ -74,13 +79,13 @@ const Projects = () => {
                 </IconButton>
                 <Collapse in={expandedProject === index} timeout="auto" unmountOnExit>
                   <Typography variant="body1" sx={{ marginTop: '0.5rem' }}>Objectifs:</Typography>
-                  <StyledList style={{ backgroundColor: '#eb89ff', padding: '10px', borderRadius: '5px' }}>
+                  <StyledList style={{ backgroundColor: '', padding: '10px', borderRadius: '5px' }}>
                     {project.objectives && project.objectives.map((objective, i) => (
                       <StyledListItem key={i}>{objective}</StyledListItem>
                     ))}
                   </StyledList>
                   <Typography variant="body1" sx={{ marginTop: '0.5rem' }}>Technologies:</Typography>
-                  <StyledList style={{ backgroundColor: '#eb89ff', padding: '10px', borderRadius: '5px' }}>
+                  <StyledList style={{ backgroundColor: 'rgb(221 221 221)', borderRadius: '5px' }}>
 
                     {project.technologies && project.technologies.map((tools, i) => (
                       <StyledListItem   key={i}>{tools}</StyledListItem>

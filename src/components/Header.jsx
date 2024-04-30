@@ -6,22 +6,23 @@ import ReactLogo from "../data/logo.png";
 
 const Header = () => {
     const CustomAppBar  = styled(AppBar) ({
-        backgroundColor: '#e397f9',
-        color:'#17202A'
+        backgroundColor: 'rgb(41 54 62)',
       });
       const StyledButton = styled(Button)({
         display:'flex',
-        backdropFilter: 'blur(10px)',
+        padding:'0',
+        backgroundColor:'#47569366',
+        boxShadow: '0 0 100px 0 rgb(0 0 0 / 10%)',
         borderRadius: '10px',
         alignItems:'center',
+        border:'none ',
         gap:'1rem',
-          marginLeft:'10px',
-          color: "#273746",});
+        color: "rgb(231 248 255)",});
 
   return (
     <CustomAppBar  position="static" >
-      <Toolbar >
-    <  Typography component={NavLink} to="/" variant="h6" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
+      <Toolbar  >
+    <  Typography component={NavLink} to="/" >
           <img src={ReactLogo} alt="React Logo" style={{ height: 50, marginRight: 10, borderRadius:50}} />
   
          </Typography>

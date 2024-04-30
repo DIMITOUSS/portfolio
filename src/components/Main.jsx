@@ -14,19 +14,22 @@ import { useState } from 'react';
 
 const Main = () => {
   const [imageSrc, setImageSrc] = useState(lamp); 
-  const [bgColor, setBgColor] = useState('#eb89ff'); 
+  const [bgColor, setBgColor] = useState('rgb(41 54 62)'); 
   const [textColor, setTextColor] = useState('rgb(245 228 146)'); 
 
 
   const CustomCard = styled(Card)({
     boxShadow: "0px 10px 20px -5px rgba(39,49,78,.1)",
-    borderRadius: "10px",
+    borderRadius: "20px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    padding:'0',
+    margin:'0',
+    height: "100%",
+    width: "100%",
     color: textColor,
-    textAlign: 'center',
     backgroundColor: bgColor,
   
   });
@@ -34,7 +37,6 @@ const Main = () => {
 
 
   const Banner = styled(Card)({
-    margin: '20px',
     display: "flex",
     color: textColor,
     textAlign: 'center',
@@ -49,8 +51,8 @@ const Main = () => {
   const handleImageClick = () => {
     // Toggle between original and new image
     setImageSrc((prevSrc) => (prevSrc === lamp ? lampoff : lamp));
-    setBgColor((prevColor) => (prevColor === '#eb89ff' ? '#f0dc4e' : '#eb89ff'));
-    setTextColor((prevColor) => (prevColor === '#a817ff' ? 'black' : '#a817ff'));
+    setBgColor((prevColor) => (prevColor === 'rgb(41 54 62)' ? 'gray' : 'rgb(41 54 62)'));
+    setTextColor((prevColor) => (prevColor === 'rgb(245 228 146)' ? 'white' : 'rgb(245 228 146)'));
 
   };
   const cardsData = [
@@ -66,15 +68,12 @@ const Main = () => {
     dots: true,
     focusOnSelect: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
-    className: "center",
-    centerPadding: "60px",
-    cssEase: 'linear',
 
 
   };
@@ -86,14 +85,14 @@ const Main = () => {
       <Slider {...sliderSettings}>
         {cardsData.map((card, index) => (
           <div key={index}>
-            <Card style={{ display: 'flex', flexDirection: 'column ', gap: '2rem', objectFit: 'cover' }}>
+            <Card >
               <CustomCard>
                 <CardMedia>
                   <img src={card.imageUrl} alt={card.title} style={{ height: 100, objectFit: 'cover' }} />
                 </CardMedia>
               </CustomCard>
               <CardContent>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" style={{fontFamily:'Shrikhand'}}>
                   {card.title}
                 </Typography>
                 <AnimatedLoadingBar percentage={card.percentage} />

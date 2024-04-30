@@ -3,7 +3,7 @@ import { Typography, Box } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box sx={{ bgcolor: '#e397f9', color: 'white', py: 2, px: 3 }}>
+    <Box sx={{ bgcolor: 'rgb(41 54 62)', color: 'white', py: 2, px: 3 }}>
       <Typography variant="body1">
         © {new Date().getFullYear()} My Portfolio. All rights reserved.
       </Typography>
@@ -12,7 +12,7 @@ const Footer = () => {
         and More.
       </Typography>
       <Typography variant="body2">
-        Designed by Oussama.
+        Designed by Oussama Kechairi.
       </Typography>
     
     </Box>
