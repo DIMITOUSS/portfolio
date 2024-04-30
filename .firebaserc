@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "ouss-fafd4"
-  }
+    "default": "portfolio-81902",
+    "portfolio": "portfolio-81902"
+  },
+  "targets": {},
+  "etags": {}
 }
