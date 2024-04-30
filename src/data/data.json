@@ -1,0 +1,120 @@
+{
+    "projects": [
+      {
+        "name": "Argentbank",
+        "imageUrl": "./assets/P13_1.webp",
+        "client": "Siteweb spécialisée dans l'organisation d'event .",
+        "presentation": "Utilisez une API pour un compte utilisateur bancaire avec React ",
+        "objectives": [
+          "Gerer le systeme Login/Sign in user",
+          "Gerer le systeme Logout user ",
+          "Gerer tout les States en utilistant Redux ",
+          "Rendre le projet compatible avec diverses tailles d'écran",
+          "Respecter les spécifications de conception"
+        ],
+        "technologies": ["React", "Redux ", "Swagger"]
+      },
+      
+      {
+        "name": "724 events",
+        "imageUrl": "./assets/724events.webp",
+        "client": "Siteweb spécialisée dans l'organisation d'event .",
+        "presentation": "debugger le site, utilisation du test unitaire, inegration .",
+        "objectives": [
+          "Réduire les temps de chargement",
+          "debugger et corrigé les bugs ",
+          "Rendre le projet compatible avec diverses tailles d'écran",
+          "Respecter les spécifications de conception"
+        ],
+        "technologies": ["jest", "nightwatch ", "reactdev tool", "outils de debugages"]
+      },{
+        "name": "Kasa",
+        "imageUrl": "./assets/kasa.webp",
+        "link":"https://kasa-50b94.web.app/",
+        "client": "Startup spécialisée dans la location d'appartements entre particuliers.",
+        "presentation": "Javascript moderne. Utilisation de React pour le front-end , ainsi que des maquettes fournies par le designer.",
+        "objectives": [
+          "Rendre le projet compatible avec diverses tailles d'écran",
+          "Respecter les spécifications de conception"
+        ],
+        "technologies": ["React","HTML", "CSS", "Flexbox", "Responsive Design"]
+      },
+      {
+        "name": "Portfolio Sophie Bluel",
+        "client": "Agence ArchiWebos",
+        "imageUrl": "/assets/Neutral Modern New Website Mockup Instagram Post.webp",
+
+        "presentation": "Aidé une équipe à finaliser le nouveau site internet d'une architecte d'intérieur. Développement de plusieurs fonctionnalités clés pour le site.",
+        "objectives": [
+          "Création de la page de présentation des travaux de l'architecte avec filtrage par catégorie",
+          "Développement de la page de connexion sécurisée de l'administrateur avec JWT pour l'authentification",
+          "Conception d'une modale permettant à l'architecte d'ajouter ou de supprimer des projets"
+        ],
+        "technologies": ["HTML5", "CSS3", "JavaScript", "Node.js"]
+      },
+      {
+        "name": "Qwenta - Menu Maker",
+        "imageUrl": "/assets/methode_agile.webp",
+
+        "client": "Qwenta, entreprise spécialisée dans les solutions numériques pour la restauration.",
+        "presentation": "Préparation et planification d'un projet de développement particulier : la création du Menu Maker pour l'entreprise Qwenta. Outil novateur dédié aux restaurateurs, simplifiant la conception et la mise en page de leurs menus.",
+        "objectives": [
+          "Rendre le projet compatible avec diverses tailles d'écran",
+          "Respecter les spécifications de conception"
+        ],
+        "technologies": ["HTML", "CSS", "JavaScript", "Notion", "Kanban"]
+      },
+      {
+        "name": "Ohmyfood",
+        "imageUrl": "/assets/ohmyfood.webp",
+        "link" : "https://dimitouss.github.io/ohmyfood/",
+        "presentation":"Création du site en suivant les maquettes fournies. L'objectif de  ce projet est de développer en mobile first et d'appliquer le responsive design. Parmi les demandes,",
+          
+       
+
+        "objectives": [
+          "Rendre le projet compatible avec diverses tailles d'écran",
+          "Respecter les spécifications de conception"
+        ],
+        "technologies": ["HTML", "CSS","Sass"]
+      },
+      {
+        "name": "Booki",
+        "presentation":"Création du site en suivant les maquettes fournies. L'objectif de  ce projet est de développer en mobile first et d'appliquer le responsive design. Parmi les demandes,",
+
+        "imageUrl": "/assets/booki.webp",
+
+
+        "objectives": [
+          "Rendre le projet compatible avec diverses tailles d'écran",
+          "Respecter les spécifications de conception"
+        ],
+        "technologies": ["HTML5", "CSS3", "Flexbox", "Responsive Web Design"]
+      },
+      {
+        "name": "Riding Cities",
+        "imageUrl": "/assets/cityriding.webp",
+
+        "objectives": [
+          "Rendre le projet compatible avec diverses tailles d'écran",
+          "Respecter les spécifications de conception"
+        ],
+        "technologies": ["HTML5", "CSS3"]
+      },
+      {
+        "name": "Nina Carducci",
+        "imageUrl": "/assets/nina.webp",
+        "link" : "https://dimitouss.github.io/ninacarducci.github.io/",
+        "client": "Nina Carducci, photographe professionnelle",
+        "presentation": "Nina Carducci est le site web d'une photographe professionnelle spécialisée dans les portraits et la photographie événementielle. Le site a pour but de présenter le portfolio de la photographe et de mettre en valeur ses réalisations.",
+        "objectives": [
+          "Optimiser la performance globale du site",
+          "Réduire les temps de chargement",
+          "Renforcer le référencement sur les moteurs de recherche"
+        ],
+       
+        "technologies": ["SEO", "Optimisation web", "Référencement local", "Rich Snippet", "Wave", "Lighthouse", "Accessibilité"]
+      }
+    ]
+  }
+  

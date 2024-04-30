@@ -1,9 +1,9 @@
 import React from 'react';
-import { Typography, Link, Box } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 
 const Footer = () => {
   return (
-    <Box sx={{ bgcolor: 'primary.main', color: 'white', py: 2, px: 3 }}>
+    <Box sx={{ bgcolor: '#e397f9', color: 'white', py: 2, px: 3 }}>
       <Typography variant="body1">
         © {new Date().getFullYear()} My Portfolio. All rights reserved.
       </Typography>
@@ -14,11 +14,7 @@ const Footer = () => {
       <Typography variant="body2">
         Designed by Oussama Kechairi.
       </Typography>
-      <Typography variant="body2">
-        <Link href="https://github.com/your-username/your-portfolio" target="_blank" rel="noopener">
-          View on GitHub
-        </Link>
-      </Typography>
+    
     </Box>
   );
 };
