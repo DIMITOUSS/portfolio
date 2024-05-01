@@ -9,7 +9,7 @@ import lampoff from '../data/lampoff.jpg'
 
 import './main.css'
 import { Player } from '@lottiefiles/react-lottie-player';
-import AnimationData from '../lottie/Animation3.json'
+import AnimationData from '../lottie/Animation.json'
 import { useState } from 'react';
 
 const Main = () => {
@@ -106,9 +106,6 @@ const Main = () => {
           loop
           src={AnimationData}
           style={{ height: '300px', width: '300px' }}
-
-
-
         />
       <Banner >
       <p>

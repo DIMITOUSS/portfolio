@@ -1,37 +1,39 @@
-.coming-soon-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .coming-soon-text {
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    color: azure;
+/* style.css */
 
-  }
-  
-  .animation-container {
-    display: flex;
-  }
-  
-  .dot {
-    width: 20px;
-    height: 20px;
-    background-color: #007bff;
-    border-radius: 50%;
-    margin: 0 10px;
-    animation: bounce 0.5s infinite alternate;
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-20px);
-    }
-  }
-  
+/* Container for all blogs */
+.blogs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  /* added max-width for responsive design */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual blog styling */
+.blog {
+  /* card-like styling */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* added border-radius for a softer look */
+  border-radius: 10px;
+
+}
+
+.blog > * {
+  margin-bottom: 10px;
+}
+
+.blog h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.blog p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
