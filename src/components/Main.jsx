@@ -7,7 +7,6 @@ import AnimatedLoadingBar from './AnimatedLoadingBar';
 import lamp from '../data/lamp.jpg'
 import lampoff from '../data/lampoff.jpg'
 
-import './main.css'
 import { Player } from '@lottiefiles/react-lottie-player';
 import AnimationData from '../lottie/Animation.json'
 import { useState } from 'react';
@@ -20,15 +19,12 @@ const Main = () => {
 
   const CustomCard = styled(Card)({
     boxShadow: "0px 10px 20px -5px rgba(39,49,78,.1)",
-    borderRadius: "20px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     padding:'0',
     margin:'0',
-    height: "100%",
-    width: "100%",
     color: textColor,
     backgroundColor: bgColor,
   
@@ -51,8 +47,8 @@ const Main = () => {
   const handleImageClick = () => {
     // Toggle between original and new image
     setImageSrc((prevSrc) => (prevSrc === lamp ? lampoff : lamp));
-    setBgColor((prevColor) => (prevColor === 'rgb(41 54 62)' ? 'gray' : 'rgb(41 54 62)'));
-    setTextColor((prevColor) => (prevColor === 'rgb(245 228 146)' ? 'white' : 'rgb(245 228 146)'));
+    setBgColor((prevColor) => (prevColor === 'rgb(41 54 62)' ? 'rgb(206,217,237);' : 'rgb(41 54 62)'));
+    setTextColor((prevColor) => (prevColor === 'rgb(245 228 146)' ? 'rgb(41 54 62)' : 'rgb(245 228 146)'));
 
   };
   const cardsData = [
@@ -69,8 +65,8 @@ const Main = () => {
     focusOnSelect: true,
     infinite: true,
     speed: 1000,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
@@ -82,11 +78,11 @@ const Main = () => {
   return (
     <div>
    
-      <Slider {...sliderSettings}>
+      <Slider {...sliderSettings}  >
         {cardsData.map((card, index) => (
           <div key={index}>
-            <Card >
-              <CustomCard>
+            <Card style={{width:'10rem',height:'100%', borderRadius:'20%', padding:0,margin:0}} >
+              <CustomCard >
                 <CardMedia>
                   <img src={card.imageUrl} alt={card.title} style={{ height: 100, objectFit: 'cover' }} />
                 </CardMedia>

@@ -3,9 +3,7 @@ import { Container, Typography, Grid, Card, CardContent, Collapse, IconButton } 
 import { ExpandMore } from '@mui/icons-material';
 import styled, { keyframes } from 'styled-components';
 import jsonData from '../data/data.json';
-import './main.css';
-import { Link } from 'react-router-dom';
-import { color } from 'framer-motion';
+
 
 const bounceAnimation = keyframes`
   0% {
