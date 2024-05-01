@@ -68,7 +68,7 @@ const Projects = () => {
             <AnimatedCard sx={{ maxWidth: 300 }}>
               <CardContent>
                 <img  src={project.imageUrl} alt={project.name} style={{ maxWidth: '100%', height: 'auto' }} />
-                <a  style={{textDecoration:'none',fontFamily:'Shrikhand',fontSize:18}} href={project.link} target='_blank'>  Visit Website           </a >
+                <a  style={{textDecoration:'none',fontFamily:'Shrikhand',fontSize:18}} href={project.link} target='_blank' rel="noreferrer">  Visit Website           </a >
 
                 <StyledTitle variant="h5">{project.name}</StyledTitle>
                 <Typography variant="body1" sx={{ marginTop: '0.5rem' }}>{project.presentation}</Typography>
