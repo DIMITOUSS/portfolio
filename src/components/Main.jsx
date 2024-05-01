@@ -4,8 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { styled } from '@mui/system';
 import AnimatedLoadingBar from './AnimatedLoadingBar';
-import lamp from '../data/lamp.jpg'
-import lampoff from '../data/lampoff.jpg'
+import lamp from '../data/lamp.webp'
+import lampoff from '../data/lampoff.webp'
 
 import { Player } from '@lottiefiles/react-lottie-player';
 import AnimationData from '../lottie/Animation.json'
