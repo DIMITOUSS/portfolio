@@ -28,7 +28,7 @@ const Header = () => {
   
          </Typography>
         <StyledButton >
-        <Button style={{backgroundColor:'#47569366',}} component={NavLink} to="/projects" color="inherit"> <i class="fa-brands fa-r-project"></i> </Button>
+        <Button style={{backgroundColor:'rgb(255,45,187)',}} component={NavLink} to="/projects" color="inherit"> <i class="fa-brands fa-r-project"></i> </Button>
         <Button component={NavLink} to="/contact" color="inherit"><i class="fa-regular fa-comment"></i></Button>
         <Button component={NavLink} to="/blogs" color="inherit"><i class="fa-solid fa-blog"></i></Button>
 
