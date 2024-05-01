@@ -12,7 +12,7 @@ const Footer = () => {
         and More.
       </Typography>
       <Typography variant="body2">
-        Designed by Oussama Kechairi.
+        Designed by Oussama .
       </Typography>
     
     </Box>
