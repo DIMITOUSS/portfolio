@@ -14,7 +14,7 @@ import { useState } from 'react';
 const Main = () => {
   const [imageSrc, setImageSrc] = useState(lamp); 
   const [bgColor, setBgColor] = useState('rgb(41 54 62)'); 
-  const [textColor, setTextColor] = useState('rgb(245 228 146)'); 
+  const [textColor, setTextColor] = useState('rgb(249 213 28)'); 
 
 
   const CustomCard = styled(Card)({
@@ -48,7 +48,7 @@ const Main = () => {
     // Toggle between original and new image
     setImageSrc((prevSrc) => (prevSrc === lamp ? lampoff : lamp));
     setBgColor((prevColor) => (prevColor === 'rgb(41 54 62)' ? 'rgb(206,217,237);' : 'rgb(41 54 62)'));
-    setTextColor((prevColor) => (prevColor === 'rgb(245 228 146)' ? 'rgb(41 54 62)' : 'rgb(245 228 146)'));
+    setTextColor((prevColor) => (prevColor === 'rgb(249 213 28)' ? 'rgb(41 54 62)' : 'rgb(249 213 28)'));
 
   };
   const cardsData = [
