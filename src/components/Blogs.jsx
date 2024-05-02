@@ -16,7 +16,7 @@ const Blogs = () => {
         </p>
         {/* Video placeholder for Redux tutorial */}
         <iframe
-          width="560"
+          width='100%'
           height="315"
           src="https://www.youtube.com/embed/D2MqT4OEgoE"
           title="Redux Tutorial"
@@ -35,7 +35,7 @@ const Blogs = () => {
         </p>
         {/* Video placeholder for JavaScript Promises explanation */}
         <iframe
-          width="560"
+          width='100%'
           height="315"
           src="https://www.youtube.com/embed/RvYYCGs45L4"
           title="JavaScript Promises"
@@ -57,7 +57,7 @@ const Blogs = () => {
         </ul>
         {/* Video placeholder for JavaScript functions explanation */}
         <iframe
-          width="560"
+          width='100%'
           height="315"
           src="https://www.youtube.com/embed/EzB6Pk66XW8"
           title="JavaScript Functions"
@@ -73,7 +73,7 @@ const Blogs = () => {
         </p>
         {/* Video placeholder for React best practices */}
         <iframe
-          width="560"
+          width='100%'
           height="315"
           src="https://www.youtube.com/embed/YaHnww6I5Y8"
           title="React Best Practices"
