@@ -52,11 +52,17 @@ const Main = () => {
 
   };
   const cardsData = [
-    { title: 'React', description: 'Promises', imageUrl: './assets/logo192.webp', percentage: 80 },
-    { title: 'JavaScript', description: 'Promises', imageUrl: './assets/js.webp', percentage: 60 },
-    { title: 'Sass', description: 'Description 2', imageUrl: './assets/sass.webp', percentage: 90 },
-    { title: 'Css', description: 'Description 3', imageUrl: './assets/css.webp', percentage: 90 },
-    { title: 'HTML5', description: 'Description 3', imageUrl: './assets/html.webp', percentage: 1000 },
+    { title: 'React',  imageUrl: './assets/logo192.webp', percentage: 80 },
+    { title: 'JavaScript', imageUrl: './assets/js.webp', percentage: 60 },
+    { title: 'Sass', imageUrl: './assets/sass.webp', percentage: 90 },
+    { title: 'Css', imageUrl: './assets/css.webp', percentage: 90 },
+    { title: 'HTML5',  imageUrl: './assets/html.webp', percentage: 100 },
+    { title: 'Figma',  imageUrl: './assets/figma.webp', percentage: 100 },
+    { title: 'Agile',  imageUrl: './assets/agile.webp', percentage: 100 },
+    { title: 'Git',  imageUrl: './assets/git.webp', percentage: 100 },
+
+
+
   ];
 
   // Settings for React Slick slider
