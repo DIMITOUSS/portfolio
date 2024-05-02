@@ -71,11 +71,11 @@ const Main = () => {
     dots: true,
     focusOnSelect: true,
     infinite: true,
-    speed: 1000,
+    speed:2000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     centerMode: true,
 
 
