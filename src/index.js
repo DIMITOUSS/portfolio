@@ -11,9 +11,11 @@ import Contact from './components/Contact';
 import Blogs from './components/Blogs'
 import './index.css';
 
+
 // Create a root.
 
 createRoot(document.getElementById("root")).render(
+  
   <React.StrictMode>
     <Router>
         <CssBaseline />

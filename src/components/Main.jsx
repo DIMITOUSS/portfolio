@@ -17,6 +17,7 @@ const Main = () => {
   const [textColor, setTextColor] = useState('rgb(249 213 28)'); 
 
 
+
   const CustomCard = styled(Card)({
     boxShadow: "0px 10px 20px -5px rgba(39,49,78,.1)",
     display: "flex",
@@ -72,7 +73,7 @@ const Main = () => {
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
