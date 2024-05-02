@@ -71,8 +71,9 @@ const Contact = () => {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      netlify
     >
-      <FormGroup>
+      <FormGroup >
         <Label htmlFor="name">Name</Label>
         <Input type="text" name="name" />
       </FormGroup>
