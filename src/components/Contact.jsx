@@ -65,19 +65,18 @@ const Contact = () => {
   };
 
   return (
-    <FormContainer
+    <FormContainer data-netlify="true"
       id="contact-form"
       onSubmit={handleSubmit}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      netlify
     >
-      <FormGroup >
+      <FormGroup data-netlify="true" >
         <Label htmlFor="name">Name</Label>
         <Input type="text" name="name" />
       </FormGroup>
-      <FormGroup>
+      <FormGroup data-netlify="true">
         <Label htmlFor="email">Email address</Label>
         <Input type="email" name="email" />
       </FormGroup>
