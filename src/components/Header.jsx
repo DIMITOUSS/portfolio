@@ -28,9 +28,9 @@ const Header = () => {
          </Typography>
         <StyledButton  >
         
-        <Button style={{backgroundColor:'rgb(34 153 247)', }} component={NavLink} to="/projects" color="inherit"> <i class="fa-brands fa-r-project"></i> </Button>
-        <Button component={NavLink} to="/contact" color="inherit"><i class="fa-regular fa-comment"></i></Button>
-        <Button component={NavLink} to="/blogs" color="inherit"><i class="fa-solid fa-blog"></i></Button>
+        <Button style={{backgroundColor:'rgb(34 153 247)',borderRadius:'50px' }} component={NavLink} to="/projects" color="inherit"> p<i class="fa-brands fa-r-project"></i> ojects</Button>
+        <Button component={NavLink} to="/contact" color="inherit">c<i class="fa-regular fa-comment"></i>ntact</Button>
+        <Button component={NavLink} to="/blogs" color="inherit"><i class="fa-solid fa-blog"></i>logs</Button>
 
         </StyledButton>
       </Toolbar>
