@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { SocialIcon } from "react-social-icons"; // Import the SocialIcon component
+import { SocialIcon } from "react-social-icons";
 
 const FormContainer = styled(motion.form)`
   max-width: 400px;
@@ -65,22 +65,25 @@ const Contact = () => {
   };
 
   return (
-    <FormContainer data-netlify="true"
-      id="contact-form"
+    <FormContainer
+      name="contact"
+      method="POST"
+      data-netlify="true"
       onSubmit={handleSubmit}
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <FormGroup data-netlify="true" >
+      <input type="hidden" name="form-name" value="contact" />
+      <FormGroup>
         <Label htmlFor="name">Name</Label>
         <Input type="text" name="name" />
       </FormGroup>
-      <FormGroup data-netlify="true">
+      <FormGroup>
         <Label htmlFor="email">Email address</Label>
         <Input type="email" name="email" />
       </FormGroup>
-      <FormGroup data-netlify="true">
+      <FormGroup>
         <Label htmlFor="message">Message</Label>
         <TextArea rows="5" name="message" />
       </FormGroup>
@@ -92,12 +95,8 @@ const Contact = () => {
         {status}
       </SubmitButton>
       <SocialIconsContainer>
-      
         <SocialIcon target="_blank" url="https://www.linkedin.com/in/oussama-kechairi-871445109/" />
-
         <SocialIcon target="_blank" url="https://github.com/DIMITOUSS" />
-        <SocialIcon target="_blank" url="https://www.youtube.com/@Comedyclub13-14" />
-
       </SocialIconsContainer>
     </FormContainer>
   );

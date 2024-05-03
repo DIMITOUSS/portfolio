@@ -88,7 +88,7 @@ const Main = () => {
       <Slider {...sliderSettings}  >
         {cardsData.map((card, index) => (
           <div key={index}>
-            <Card style={{width:'10rem',height:'100%', borderRadius:'20%', padding:0,margin:0}} >
+            <Card style={{width:'10rem',height:'100%', borderRadius:'20%', padding:0,margin:0,}} >
               <CustomCard >
                 <CardMedia>
                   <img src={card.imageUrl} alt={card.title} style={{ height: 100, objectFit: 'cover' }} />
