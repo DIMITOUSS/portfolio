@@ -80,7 +80,7 @@ const Contact = () => {
         <Label htmlFor="email">Email address</Label>
         <Input type="email" name="email" />
       </FormGroup>
-      <FormGroup>
+      <FormGroup data-netlify="true">
         <Label htmlFor="message">Message</Label>
         <TextArea rows="5" name="message" />
       </FormGroup>
@@ -96,6 +96,8 @@ const Contact = () => {
         <SocialIcon target="_blank" url="https://www.linkedin.com/in/oussama-kechairi-871445109/" />
 
         <SocialIcon target="_blank" url="https://github.com/DIMITOUSS" />
+        <SocialIcon target="_blank" url="https://www.youtube.com/@Comedyclub13-14" />
+
       </SocialIconsContainer>
     </FormContainer>
   );
