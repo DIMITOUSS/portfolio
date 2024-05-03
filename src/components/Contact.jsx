@@ -52,22 +52,31 @@ const SocialIconsContainer = styled.div`
 const Contact = () => {
   const [status, setStatus] = useState("Submit");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("Sending...");
-
-    // Your form submission logic here (API call, etc.)
-
-    // Example: Simulate submission delay
-    setTimeout(() => {
-      setStatus("Submitted!");
-    }, 1500);
+    const form = e.target;
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+      },
+    })
+    .then((response) => {
+      setStatus("Form Submitted!");
+      form.reset();
+    })
+    .catch((error) => {
+      setStatus("Oops! There was a problem submitting your form");
+    });
   };
-
+  
   return (
     <FormContainer
       name="contact"
       method="POST"
+      action="/"
       data-netlify="true"
       onSubmit={handleSubmit}
       initial={{ opacity: 0, y: -20 }}
