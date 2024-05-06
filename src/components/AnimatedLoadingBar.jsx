@@ -5,7 +5,7 @@ const AnimatedLoadingBar = ({ percentage }) => {
   const { width } = useSpring({
     from: { width: '0%' },
     to: { width: `${percentage}%` },
-    config: { duration: 3000 },
+    config: { duration: 500 },
   });
 
   return (
