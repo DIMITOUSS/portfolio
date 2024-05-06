@@ -16,7 +16,11 @@ const Main = () => {
   const [bgColor, setBgColor] = useState('rgb(41 54 62)'); 
   const [textColor, setTextColor] = useState('rgb(249 213 28)'); 
 
-
+  const handleImageClick = () => {
+    // Toggle between original and new image
+    setImageSrc((prevSrc) => (prevSrc === lamp ? lampoff : lamp));
+    setBgColor((prevColor) => (prevColor === 'rgb(41 54 62)' ? 'rgb(206,217,237);' : 'rgb(41 54 62)'));
+  };
 
   const CustomCard = styled(Card)({
     boxShadow: "0px 10px 20px -5px rgba(39,49,78,.1)",
@@ -28,30 +32,17 @@ const Main = () => {
     margin:'0',
     color: textColor,
     backgroundColor: bgColor,
-  
   });
-
-
 
   const Banner = styled(Card)({
     display: "flex",
-    color: textColor,
     textAlign: 'center',
     backgroundColor: bgColor,
     justifyContent: "center",
     alignItems: "center",
-    fontFamily: 'shrikhand',
-  
-    
+    paddingBottom:'3rem'
   });
 
-  const handleImageClick = () => {
-    // Toggle between original and new image
-    setImageSrc((prevSrc) => (prevSrc === lamp ? lampoff : lamp));
-    setBgColor((prevColor) => (prevColor === 'rgb(41 54 62)' ? 'rgb(206,217,237);' : 'rgb(41 54 62)'));
-    setTextColor((prevColor) => (prevColor === 'rgb(249 213 28)' ? 'rgb(41 54 62)' : 'rgb(249 213 28)'));
-
-  };
   const cardsData = [
     { title: 'React',  imageUrl: './assets/logo192.webp', percentage: 80 },
     { title: 'JavaScript', imageUrl: './assets/js.webp', percentage: 60 },
@@ -61,71 +52,51 @@ const Main = () => {
     { title: 'Figma',  imageUrl: './assets/figma.webp', percentage: 100 },
     { title: 'Agile',  imageUrl: './assets/agile.webp', percentage: 100 },
     { title: 'Git',  imageUrl: './assets/git.webp', percentage: 100 },
-
-
-
   ];
 
   // Settings for React Slick slider
   const sliderSettings = {
-    dots: true,
-    focusOnSelect: true,
     infinite: true,
     speed:2000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true,
-
-
+    arrows: false,
   };
-
 
   return (
     <div>
-   
-      <Slider {...sliderSettings}  >
-        {cardsData.map((card, index) => (
-          <div key={index}>
-            <Card style={{width:'10rem',height:'100%', borderRadius:'20%', padding:0,margin:0,}} >
-              <CustomCard >
-                <CardMedia>
-                  <img src={card.imageUrl} alt={card.title} style={{ height: 100, objectFit: 'cover' }} />
-                </CardMedia>
-              </CustomCard>
-              <CardContent>
-                <Typography variant="h5" component="h2" style={{fontFamily:'Shrikhand'}}>
-                  {card.title}
-                </Typography>
-                <AnimatedLoadingBar percentage={card.percentage} />
-              </CardContent>
-            </Card>
-          </div>
-        ))}
-      </Slider>
-        <Player
-          autoplay
-          loop
-          src={AnimationData}
-          style={{ height: '300px', width: '300px' }}
-        />
-      <Banner >
-      <p>
-        I'm Oussama,<br />
-        a passionate web developer<br />
-        based in France.<br />
-        Let's create amazing websites together!
-      </p>
-      <img onClick={handleImageClick}
-        src={imageSrc}
-        style={{ width: 80, height: 80, borderRadius: 50 }}
-        alt=""
+      <div style={{ margin: '4rem  0' }}> {/* Add margin-top to create space */}
+        <Slider {...sliderSettings}>
+          {cardsData.map((card, index) => (
+            <div key={index}>
+              <Card style={{width:'10rem',height:'100%', borderRadius:'20%', padding:0,margin:0,}} >
+                <CustomCard >
+                  <CardMedia>
+                    <img src={card.imageUrl} alt={card.title} style={{ height: 100, objectFit: 'cover' }} />
+                  </CardMedia>
+                </CustomCard>
+                <CardContent>
+                  <Typography variant="h5" component="h2" style={{fontFamily:'Shrikhand'}}>
+                    {card.title}
+                  </Typography>
+                  <AnimatedLoadingBar percentage={card.percentage} />
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </Slider>
+      </div>
+      <Player
+        autoplay
+        loop
+        src={AnimationData}
+        style={{ height: '300px', width: '300px' }}
       />
-    </Banner>
-
-
-
+      <Banner>
+        <img onClick={handleImageClick} src={imageSrc} style={{ width: 80, height: 80, borderRadius: 50 }} alt="" />
+      </Banner>
     </div>
   );
 };
