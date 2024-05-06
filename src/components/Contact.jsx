@@ -55,14 +55,13 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    fetch(form.action, {
+    const formData = new FormData(form);
+
+    fetch("/", {
       method: 'POST',
-      body: new FormData(form),
-      headers: {
-        'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
-        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-      },
-    })
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })   
     .then((response) => {
       setStatus("Form Submitted!");
       form.reset();
@@ -71,6 +70,10 @@ const Contact = () => {
       setStatus("Oops! There was a problem submitting your form");
     });
   };
+  
+
+  
+  
   
   return (
     <FormContainer
