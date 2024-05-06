@@ -56,20 +56,25 @@ const Contact = () => {
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
-
+  
     fetch("/", {
-      method: 'POST',
+      method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
-    })   
-    .then((response) => {
-      setStatus("Form Submitted!");
-      form.reset();
     })
-    .catch((error) => {
-      setStatus("Oops! There was a problem submitting your form");
-    });
+      .then((response) => {
+        if (response.ok) {
+          setStatus("Form Submitted!");
+          form.reset();
+        } else {
+          setStatus("Oops! There was a problem submitting your form");
+        }
+      })
+      .catch((error) => {
+        setStatus("Oops! There was a problem submitting your form");
+      });
   };
+  
   
 
   
