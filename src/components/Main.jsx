@@ -14,7 +14,6 @@ import { useState } from 'react';
 const Main = () => {
   const [imageSrc, setImageSrc] = useState(lamp); 
   const [bgColor, setBgColor] = useState('rgb(41 54 62)'); 
-  const [textColor, setTextColor] = useState('rgb(249 213 28)'); 
 
   const handleImageClick = () => {
     // Toggle between original and new image
@@ -30,7 +29,6 @@ const Main = () => {
     alignItems: "center",
     padding:'0',
     margin:'0',
-    color: textColor,
     backgroundColor: bgColor,
   });
 
