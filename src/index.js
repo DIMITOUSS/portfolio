@@ -20,7 +20,8 @@ createRoot(document.getElementById("root")).render(
     <Router>
         <CssBaseline />
         <Header />
-        <div style={{ marginTop: '20px', marginBottom: '20px' }}> {/* Add margin to create space between header and main content */}</div>
+        <div style={{ marginTop: '20px', marginBottom: '20px' }}>
+          </div>
 
         <Routes>
           <Route path="/contact" element={<Contact />} />
@@ -28,7 +29,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="/blogs" element={<Blogs />} />
 
 
-          <Route path="/" element={<Main/> } />
           <Route path="/" element={<Main/> } />
 
         </Routes>

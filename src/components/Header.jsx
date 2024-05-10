@@ -2,7 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import { styled } from '@mui/system';
-import ReactLogo from "../data/logo.webp";
+import ReactLogo from "../data/logo-color.png";
 
 const Header = () => {
     const CustomAppBar  = styled(AppBar) ({
@@ -25,7 +25,7 @@ const Header = () => {
     <CustomAppBar  position="static" >
       <Toolbar  >
     <  Typography component={NavLink} to="/" >
-          <img src={ReactLogo} alt="React Logo" style={{ height: 50, marginRight: 10, borderRadius:'50%'}} />
+          <img src={ReactLogo} alt="React Logo" style={{ width: 50, marginRight:50, borderRadius:'50%'}} />
   
          </Typography>
         <StyledButton  >

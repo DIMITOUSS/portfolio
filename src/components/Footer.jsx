@@ -14,7 +14,7 @@ const Footer = () => {
       <Typography variant="body2">
         Designed by Oussama Kechairi.
       </Typography>
-    
+
     </Box>
   );
 };

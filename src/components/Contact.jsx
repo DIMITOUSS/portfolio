@@ -56,7 +56,7 @@ const Contact = () => {
     e.preventDefault();
     const form = e.target;
     const formData = new FormData(form);
-  
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -74,12 +74,7 @@ const Contact = () => {
         setStatus("Oops! There was a problem submitting your form");
       });
   };
-  
-  
 
-  
-  
-  
   return (
     <FormContainer
       name="contact"
@@ -94,15 +89,15 @@ const Contact = () => {
       <input type="hidden" name="form-name" value="contact" />
       <FormGroup>
         <Label htmlFor="name">Name</Label>
-        <Input type="text" name="name" />
+        <Input type="text" name="name" id="name" /> {/* added id */}
       </FormGroup>
       <FormGroup>
         <Label htmlFor="email">Email address</Label>
-        <Input type="email" name="email" />
+        <Input type="email" name="email" id="email" /> {/* added id */}
       </FormGroup>
       <FormGroup>
         <Label htmlFor="message">Message</Label>
-        <TextArea rows="5" name="message" />
+        <TextArea rows="5" name="message" id="message" /> {/* added id */}
       </FormGroup>
       <SubmitButton
         type="submit"

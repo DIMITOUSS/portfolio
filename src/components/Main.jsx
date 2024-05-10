@@ -12,8 +12,8 @@ import AnimationData from '../lottie/Animation.json'
 import { useState } from 'react';
 
 const Main = () => {
-  const [imageSrc, setImageSrc] = useState(lamp); 
-  const [bgColor, setBgColor] = useState('rgb(41 54 62)'); 
+  const [imageSrc, setImageSrc] = useState(lamp);
+  const [bgColor, setBgColor] = useState('rgb(41 54 62)');
 
   const handleImageClick = () => {
     // Toggle between original and new image
@@ -27,8 +27,8 @@ const Main = () => {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    padding:'0',
-    margin:'0',
+    padding: '0',
+    margin: '0',
     backgroundColor: bgColor,
   });
 
@@ -38,24 +38,24 @@ const Main = () => {
     backgroundColor: bgColor,
     justifyContent: "center",
     alignItems: "center",
-    paddingBottom:'3rem'
+    paddingBottom: '3rem'
   });
 
   const cardsData = [
-    { title: 'React',  imageUrl: './assets/logo192.webp', percentage: 80 },
+    { title: 'React', imageUrl: './assets/logo192.webp', percentage: 80 },
     { title: 'JavaScript', imageUrl: './assets/js.webp', percentage: 60 },
     { title: 'Sass', imageUrl: './assets/sass.webp', percentage: 90 },
     { title: 'Css', imageUrl: './assets/css.webp', percentage: 90 },
-    { title: 'HTML5',  imageUrl: './assets/html.webp', percentage: 100 },
-    { title: 'Figma',  imageUrl: './assets/figma.webp', percentage: 100 },
-    { title: 'Agile',  imageUrl: './assets/agile.webp', percentage: 100 },
-    { title: 'Git',  imageUrl: './assets/git.webp', percentage: 100 },
+    { title: 'HTML5', imageUrl: './assets/html.webp', percentage: 100 },
+    { title: 'Figma', imageUrl: './assets/figma.webp', percentage: 100 },
+    { title: 'Agile', imageUrl: './assets/agile.webp', percentage: 100 },
+    { title: 'Git', imageUrl: './assets/git.webp', percentage: 100 },
   ];
 
   // Settings for React Slick slider
   const sliderSettings = {
     infinite: true,
-    speed:2000,
+    speed: 2000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
@@ -65,18 +65,18 @@ const Main = () => {
 
   return (
     <div>
-      <div style={{ margin: '4rem  0' }}> {/* Add margin-top to create space */}
+      <div style={{ margin: '4rem  0' }}> 
         <Slider {...sliderSettings}>
           {cardsData.map((card, index) => (
             <div key={index}>
-              <Card style={{width:'10rem',height:'100%', borderRadius:'20%', padding:0,margin:0,}} >
+              <Card style={{ width: '10rem', height: '100%', borderRadius: '20%', padding: 0, margin: 0, }} >
                 <CustomCard >
                   <CardMedia>
                     <img src={card.imageUrl} alt={card.title} style={{ height: 100, objectFit: 'cover' }} />
                   </CardMedia>
                 </CustomCard>
                 <CardContent>
-                  <Typography variant="h5" component="h2" style={{fontFamily:'Shrikhand'}}>
+                  <Typography variant="h5" component="h2" style={{ fontFamily: 'Shrikhand' }}>
                     {card.title}
                   </Typography>
                   <AnimatedLoadingBar percentage={card.percentage} />
