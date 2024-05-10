@@ -79,7 +79,7 @@ const Contact = () => {
     <FormContainer
       name="contact"
       method="POST"
-      action="/"
+      action="thank-you"
       data-netlify="true"
       onSubmit={handleSubmit}
       initial={{ opacity: 0, y: -20 }}
