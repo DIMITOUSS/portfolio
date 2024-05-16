@@ -3,4 +3,13 @@ body{
     margin: 0;
     padding: 0;
 background: linear-gradient( rgb(41 54 62),rgb(173 214 239),rgb(0 111 180));
+} 
+
+@media (max-width:700px) {
+    .cardm{
+        display: flex;
+        justify-content:  center;
+        flex-direction: column;
+    }
+    
 }

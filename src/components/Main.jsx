@@ -64,7 +64,7 @@ const Main = () => {
   };
 
   return (
-    <div>
+    <div >
       <div style={{ margin: '4rem  0' }}> 
         <Slider {...sliderSettings}>
           {cardsData.map((card, index) => (
