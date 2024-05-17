@@ -25,7 +25,7 @@ const Header = () => {
     <CustomAppBar  position="static" >
       <Toolbar  >
     <  Typography component={NavLink} to="/" >
-          <img src={ReactLogo} alt="React Logo" style={{ width: 50, marginRight:50, borderRadius:'50%'}} />
+          <img src={ReactLogo} alt="React Logo" style={{ width: 50, borderRadius:'50%'}} />
   
          </Typography>
         <StyledButton  >
@@ -33,6 +33,8 @@ const Header = () => {
         <Button style={{backgroundColor:'rgb(34 153 247)',borderRadius:'50px', }} component={NavLink} to="/projects" color="inherit"> p<i class="fa-brands fa-r-project"></i> ojects</Button>
         <Button component={NavLink} to="/contact" color="inherit">c<i class="fa-regular fa-comment"></i>ntact</Button>
         <Button component={NavLink} to="/blogs" color="inherit"><i class="fa-solid fa-blog"></i>logs</Button>
+        <Button component={NavLink} to="https://bandam-b13d6.web.app/" color="inherit">3D</Button>
+
         </StyledButton>
       </Toolbar>
       
